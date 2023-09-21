@@ -1,4 +1,4 @@
-# apache-logs (container)
+# Apache-logs (container)
 This is a clone from Ed Silva's [Github](https://github.com/edsiper/apache-logs).  <br />
 This is a very simple container used to send mock Apache Web Server access log activity to STDOUT (every few seconds). <br />  
 This container is used to demo different logging solutions e.g. [FluentBit](https://fluentbit.io/), etc when it comes to obtaining visibility via containerized workloads. <br />
@@ -6,7 +6,7 @@ This container is used to demo different logging solutions e.g. [FluentBit](http
 ## Build the container:
 Azure Cloud Shell: az acr build --registry aksregistryb3 --image apache-log:v1 . <br />
 
-Docker (CLI): docker build . -t digitalkali/apache-log <br />
+[Docker](https://www.docker.com/) (CLI): docker build . -t digitalkali/apache-log <br />
 
 # Kubernetes
 Run the containerized workload: <br />
