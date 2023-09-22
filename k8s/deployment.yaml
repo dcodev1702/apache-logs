@@ -17,7 +17,6 @@ spec:
         containers:
         - name: apache-log
           image: digitalkali/apache-logs
-          #image: aksregistryb3.azurecr.io/apache-log:v1
           imagePullPolicy: Always
           resources:
             requests:
