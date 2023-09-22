@@ -10,7 +10,11 @@ Azure Cloud Shell: az acr build --registry aksregistryb3 --image apache-log:v1 .
 
 # Kubernetes
 Run the containerized workload: <br />
+```console
 kubectl apply -f ./deployment.yaml
+```
 
 Delete the containerized workload: <br />
+```console
 kubectl delete -f ./deployment.yaml
+```
