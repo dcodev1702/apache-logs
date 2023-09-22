@@ -16,7 +16,7 @@ spec:
       spec:
         containers:
         - name: apache-log
-          image: edsiper/apache_logs
+          image: digitalkali/apache-logs
           #image: aksregistryb3.azurecr.io/apache-log:v1
           imagePullPolicy: Always
           resources:
