@@ -1,4 +1,4 @@
-# https://github.com/edsiper/apache-logs
+# https://github.com/digitalkali/apache-logs
 # kubectl apply -f ./deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
