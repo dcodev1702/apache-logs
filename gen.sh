@@ -1,7 +1,7 @@
 #!/bin/sh
 
 while true; do
-    n=`awk -v min=10 -v max=100 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'`
+    n=1
     for var in `seq 1 $n`;
     do
 	ip=`cat /ip.txt | shuf -n 1`
@@ -11,5 +11,5 @@ while true; do
 	echo "${ip} - - ${ts} \"GET /${uri} HTTP/1.0\" ${status} 2216"
 
     done
-    sleep 5;
+    sleep 3;
 done
