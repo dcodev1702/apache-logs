@@ -13,6 +13,9 @@ az acr build --registry aksregistryb3 --image apache-log:v1 . <br />
 docker build -t digitalkali/apache-logs . <br />
 ```
 ```console
+docker login
+```
+```console
 docker push digitalkali/apache-logs:latest <br />
 ```
 
