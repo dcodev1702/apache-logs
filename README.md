@@ -12,6 +12,9 @@ az acr build --registry aksregistryb3 --image apache-log:v1 . <br />
 ```console
 docker build -t digitalkali/apache-logs . <br />
 ```
+```console
+docker push digitalkali/apache-logs:latest <br />
+```
 
 # Kubernetes
 Run the containerized workload: <br />
