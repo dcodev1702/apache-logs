@@ -21,7 +21,7 @@ docker push digitalkali/apache-logs:latest
 ```console
 docker run -d --name apache-log digitalkali/apache-logs
 ```
-```conaole
+```console
 docker logs apache-log
 ```
 
