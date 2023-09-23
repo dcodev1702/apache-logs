@@ -6,7 +6,7 @@ This container is used to demo different logging solutions e.g. [FluentBit](http
 ## Build the container:
 Azure Cloud Shell: 
 ```console
-az acr build --registry aksregistryb3 --image apache-log:v1 .
+az acr build --registry aksregistryb3 --image apache-logs:v1 .
 ```
 [Docker](https://www.docker.com/) (CLI): 
 ```console
