@@ -6,17 +6,17 @@ This container is used to demo different logging solutions e.g. [FluentBit](http
 ## Build the container:
 Azure Cloud Shell: 
 ```console
-az acr build --registry aksregistryb3 --image apache-log:v1 . <br />
+az acr build --registry aksregistryb3 --image apache-log:v1 .
 ```
 [Docker](https://www.docker.com/) (CLI): 
 ```console
-docker build -t digitalkali/apache-logs . <br />
+docker build -t digitalkali/apache-logs .
 ```
 ```console
 docker login
 ```
 ```console
-docker push digitalkali/apache-logs:latest <br />
+docker push digitalkali/apache-logs:latest
 ```
 
 # Kubernetes
