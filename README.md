@@ -18,6 +18,12 @@ docker login
 ```console
 docker push digitalkali/apache-logs:latest
 ```
+```console
+docker run -d --name apache-log digitalkali/apache-logs
+```
+```conaole
+docker logs apache-log
+```
 
 # Kubernetes
 Run the containerized workload: <br />
