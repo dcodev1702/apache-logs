@@ -38,7 +38,7 @@ Delete the containerized workload: <br />
 kubectl delete -f ./deployment.yaml
 ```
 
-Display apache-log mock log <br />
+Display apache-log mock access log <br />
 ```console
 kubectl get pods
 kubectl logs -f apache-log-6445545488-7vqmh
