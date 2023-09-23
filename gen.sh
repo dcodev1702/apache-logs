@@ -11,5 +11,5 @@ while true; do
 	echo "${ip} - - ${ts} \"GET /${uri} HTTP/1.0\" ${status} 1702"
 
     done
-    sleep 3;
+    sleep 60;
 done
