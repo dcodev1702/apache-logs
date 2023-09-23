@@ -1,25 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
   name: apache-log
+  labels:
+    app: apache-log
 spec:
-  selector:
-      matchLabels:
-        app: apache-log
-  replicas: 1
-  template:
-      metadata:
-        labels:
-            app: apache-log
-      spec:
-        containers:
-        - name: apache-log
-          image: digitalkali/apache-logs
-          imagePullPolicy: Always
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "100m"
-            limits:
-              memory: "128Mi"
-              cpu: "300m"
+  containers:
+  - name: apache-log
+    image: digitalkali/apache-logs
+    imagePullPolicy: Always
+    env:
+    - name: FLAG
+      value: "ALL_YOUR_BASE_ARE_BELONG_TO_US"
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "100m"
+      limits:
+        memory: "128Mi"
+        cpu: "300m"
+        
