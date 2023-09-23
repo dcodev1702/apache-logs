@@ -10,6 +10,8 @@ az acr build --registry aksregistryb3 --image apache-logs:v1 .
 ```
 [Docker](https://www.docker.com/) (CLI): 
 ```console
+cd apache-logs
+chmod 755 gen.sh
 docker build -t digitalkali/apache-logs .
 ```
 ```console
