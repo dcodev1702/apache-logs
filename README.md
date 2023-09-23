@@ -37,3 +37,8 @@ Delete the containerized workload: <br />
 ```console
 kubectl delete -f ./deployment.yaml
 ```
+
+```console
+kubectl get pods
+kubectl logs -f apache-log-6445545488-7vqmh
+```
