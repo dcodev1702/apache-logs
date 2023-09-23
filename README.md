@@ -1,6 +1,6 @@
 # Apache-logs (container)
 This is a clone from Ed Silva's [Github](https://github.com/edsiper/apache-logs).  <br />
-This is a very simple container used to send mock Apache Web Server access log activity to STDOUT (every few seconds). <br />  
+This is a very simple container used to send mock Apache Web Server access log activity to STDOUT (every minute). <br />  
 This container is used to demo different logging solutions e.g. [FluentBit](https://fluentbit.io/), etc when it comes to obtaining visibility via containerized workloads. <br />
 
 ## Build the container:
