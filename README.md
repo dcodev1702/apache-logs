@@ -28,9 +28,14 @@ docker logs apache-log
 ```
 
 # Kubernetes
+Create the 'web' namespace before running the workload (container) <br />
+```console
+kubectl create namespace web
+```
+
 Run the containerized workload: <br />
 ```console
-kubectl apply -f ./deployment.yaml
+kubectl create -f ./deployment.yaml
 ```
 
 Delete the containerized workload: <br />
