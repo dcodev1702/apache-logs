@@ -45,5 +45,5 @@ kubectl delete -f ./deployment.yaml
 
 Display apache-log mock access log <br />
 ```console
-kubectl logs -f $(kubectl get pods -n web -l app=apache-log -o jsonpath='{.items[0].metadata.name}')
+kubectl logs -n web -f $(kubectl get pods -n web -l app=apache-log -o jsonpath='{.items[0].metadata.name}')
 ```
