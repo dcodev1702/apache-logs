@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: apache-log
-  namespace: default
+  namespace: web
   labels:
     app: apache-log
 spec:
