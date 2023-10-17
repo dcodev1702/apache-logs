@@ -10,6 +10,20 @@ spec:
   - name: apache-log
     image: digitalkali/apache-logs
     imagePullPolicy: Always
+    securityContext:
+      privileged: false
+      runAsUser:
+        rule: MustRunAsNonRoot
+      allowPrivilegeEscalation: false
+      #readOnlyRootFilesystem: true
+      runAsUser: 10500
+      runAsGroup: 10500
+      capabilities:
+        drop:
+        - "ALL"
+        add:
+        - "NET_ADMIN"
+        - "SYS_TIME"
     env:
     - name: FLAG
       value: "ALL_YOUR_BASE_ARE_BELONG_TO_US"
