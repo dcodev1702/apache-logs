@@ -15,7 +15,6 @@ spec:
       runAsUser:
         rule: MustRunAsNonRoot
       allowPrivilegeEscalation: false
-      #readOnlyRootFilesystem: true
       runAsUser: 10500
       runAsGroup: 10500
       capabilities:
