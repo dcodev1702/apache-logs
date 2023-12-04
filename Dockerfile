@@ -1,8 +1,11 @@
 FROM busybox
 
-COPY words.txt /
-COPY status.txt /
-COPY ip.txt /
-COPY gen.sh  /
+ENV BUILD_DIR /app
+RUN mkdir $BUILD_DIR
 
-CMD ["/gen.sh"]
+COPY words.txt "$BUILD_DIR"
+COPY status.txt "$BUILD_DIR"
+COPY ip.txt "$BUILD_DIR"
+COPY gen.sh "$BUILD_DIR"
+
+CMD ["sh", "-c", "$BUILD_DIR/gen.sh"]
