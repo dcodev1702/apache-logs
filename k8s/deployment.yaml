@@ -10,7 +10,7 @@ spec:
     worker: "true"
   containers:
   - name: apache-log
-    image: digitalkali/apache-logs
+    image: digitalkali/apache-logs:latest
     imagePullPolicy: Always
     securityContext:
       privileged: false
