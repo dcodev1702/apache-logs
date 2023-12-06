@@ -6,6 +6,8 @@ metadata:
   labels:
     app: apache-log
 spec:
+  nodeSelector:
+    worker: "true"
   containers:
   - name: apache-log
     image: digitalkali/apache-logs
