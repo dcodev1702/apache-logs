@@ -21,10 +21,13 @@ docker login
 docker push digitalkali/apache-logs:latest
 ```
 ```console
-docker run -d --name apache-log digitalkali/apache-logs
+docker run -d --rm --name apache-logs digitalkali/apache-logs
 ```
 ```console
-docker logs apache-log
+docker logs -f apache-logs
+```
+```console
+docker exec -it apache-logs /bin/sh
 ```
 
 # Kubernetes
@@ -45,5 +48,5 @@ kubectl delete -f ./deployment.yaml
 
 Display apache-log mock access log <br />
 ```console
-kubectl logs -n web -f $(kubectl get pods -n web -l app=apache-log -o jsonpath='{.items[0].metadata.name}')
+kubectl logs -n web -f $(kubectl get pods -n web -l app=apache-logs -o jsonpath='{.items[0].metadata.name}')
 ```
